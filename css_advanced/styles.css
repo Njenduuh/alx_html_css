@@ -1,0 +1,240 @@
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: transparent; /* Assuming the header is transparent */
+}
+
+header img {
+    width: 150px; /* Adjust logo size */
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #ffffff; /* White color for navigation links */
+    text-decoration: none;
+    margin-left: 30px; /* Space between navigation links */
+}
+
+nav a:hover {
+    color: #f0f0f0; /* Light gray hover effect */
+}
+
+/* Banner Section Styling */
+main {
+    background-image: url('your-banner-image.jpg'); /* Add your banner image */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0; /* Space around content */
+    text-align: center;
+    color: #ffffff; /* White text */
+}
+
+section > div:first-child {
+    margin-bottom: 40px; /* Space below main heading */
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 64px; /* Large heading */
+    font-weight: bold;
+    color: #ffffff; /* White for main heading */
+    margin-bottom: 20px;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px; /* Size of introductory text */
+    color: #c5c6ca; /* Light gray for text */
+    margin-bottom: 40px;
+}
+
+button {
+    background-color: #ff6bcb; /* Pink button */
+    color: #ffffff; /* White text on button */
+    font-family: 'Roboto', sans-serif;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e055a8; /* Darker pink on hover */
+}
+
+/* Additional Styles for Quotes and Videos Sections */
+blockquote {
+    font-size: 24px;
+    color: #ffffff; /* White for the quote */
+    margin: 20px 0;
+}
+
+cite {
+    font-size: 16px;
+    color: #c5c6ca; /* Light gray for citation */
+}
+
+/* Video Section */
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px; /* Size of section headings */
+    color: #ffffff; /* White for section headings */
+    margin: 40px 0 20px; /* Spacing around headings */
+}
+
+/* Membership Section */
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px; /* Membership plan titles */
+    color: #ffffff; /* White for membership titles */
+}
+
+/* FAQ Section */
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px; /* Size of FAQ questions */
+    color: #ffffff; /* White for FAQ questions */
+}
+
+/* Quote Section */
+section:nth-of-type(3) {
+    background-color: #b374f4; /* Light purple background */
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container for the quote and image */
+section:nth-of-type(3) > div {
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+}
+
+/* Circular Image Styling */
+section:nth-of-type(3) img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover; /* Ensures the image fits well in the circular frame */
+    margin-right: 20px;
+}
+
+/* Quote Text */
+section:nth-of-type(3) blockquote {
+    font-style: italic;
+    font-size: 18px;
+    color: white; /* White text color for contrast */
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Person's Name */
+section:nth-of-type(3) cite {
+    display: block;
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Person's Title */
+section:nth-of-type(3) p {
+    font-size: 14px;
+    color: #ddd; /* Light gray color for the title */
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    section h2 {
+        font-size: 2rem;
+    }
+
+    section > div {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 768px) {
+    section {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+}
+
+/* Footer Section */
+footer {
+    background-color: #0a122a; /* Dark navy background */
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+/* Footer Logo Section */
+footer > div > div:first-child {
+    display: flex;
+    align-items: center;
+}
+
+footer > div > div:first-child img {
+    max-width: 50px; /* Adjust logo size */
+    margin-right: 10px; /* Space between logo and text */
+}
+
+footer > div > div:first-child p {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Footer Social Media Section */
+footer > div > div:last-child a {
+    margin-left: 15px;
+}
+
+footer > div > div:last-child a img {
+    width: 25px; /* Social media icon size */
+    transition: transform 0.3s ease;
+}
+
+footer > div > div:last-child a:hover img {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Footer Copyright Section */
+footer > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+footer > div p {
+    color: #a9a9a9; /* Lighter gray text for copyright */
+    font-size: 0.85rem;
+}
