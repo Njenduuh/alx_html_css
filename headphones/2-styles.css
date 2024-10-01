@@ -1,0 +1,36 @@
+/* Our Results Section */
+.our-results {
+    background-color: #f7f7f7; /* Optional: Light background for contrast */
+    padding: 60px 0;
+    text-align: center;
+}
+
+.our-results h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.results {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.result {
+    background-color: white; /* White background for result boxes */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 250px; /* Allow the boxes to grow and shrink, with a minimum width */
+    max-width: 300px; /* Max width for result boxes */
+}
+
+.result h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.result p {
+    font-size: 16px;
+}

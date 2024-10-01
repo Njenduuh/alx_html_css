@@ -1,0 +1,36 @@
+/* What We Do Section */
+.what-we-do {
+    background-color: white; /* Optional: Add a different background color if desired */
+    padding: 60px 0;
+    text-align: center;
+}
+
+.what-we-do h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.service {
+    background-color: #f7f7f7; /* Light background for services */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 250px; /* Allow the boxes to grow and shrink, with a minimum width */
+    max-width: 300px; /* Max width for service boxes */
+}
+
+.service h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 16px;
+}
